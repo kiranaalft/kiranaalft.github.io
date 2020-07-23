@@ -1,0 +1,138 @@
+/* All Content */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: StretchSansFree;
+    background: url('homebg.png');
+}
+
+/* All Nav Button */
+ul {
+    position: fixed;
+    top: 45%;
+    left: 5.4%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 614px){
+    ul {
+        left: 0%;
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 30px;
+    font-family: 'PT Mono', monospace;
+    font-size: 20px;
+    background: #f6cbf7;
+    width: 135%;
+    height: 50px;
+    padding-top: 15%;
+    color:#a92e5b;
+    margin: 15%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.30);
+    float: left;
+	-webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+}
+
+ul li a:hover {
+    cursor:pointer;
+    margin-top: 2px;
+    color:#a92e5b;
+}
+
+@media screen and (max-width: 614px){
+    ul li a {
+        display: block;
+        font-family: 'PT Mono', monospace;
+        font-size: 14px;
+        background: #f6cbf7;
+        width: 125%;
+        height: 40px;
+        color:#a92e5b;
+        margin: 20%;
+        text-align: center;
+        border-radius: 15px;
+    }
+}
+
+/* Homepage Content */
+@media screen and (min-width: 614px){
+    body {
+        background: url('homebg.png');
+    }
+
+    #hello {
+        font-size: 60px;
+        margin-top: 50px;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        overflow-wrap: normal;
+    }
+
+    #self {
+        z-index: -1;
+        width: 330px;
+        margin-left: 62%;
+        margin-top: -160px;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 28px;
+    }
+}
+
+@media screen and (max-width: 614px){
+    body {
+        background: url('homebg.png');
+    }
+
+    #hello {
+        font-size: 45px;
+        margin-top: 50px;
+        position: initial;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        overflow-wrap: normal;
+    }
+
+    #name {
+        font-size: 36px;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        overflow-wrap: auto;
+    }
+
+    #self {
+        z-index: -1;
+        display: block;
+        margin: 0 auto;
+        width: 220px;
+        margin-top: -25px;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 28px;
+    }
+}
