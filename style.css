@@ -79,6 +79,10 @@ ul li a:hover {
         background: url('static/homebg.png');
     }
 
+    #home {
+        padding-top: 30px;
+    }
+
     #hello {
         font-size: 70px;
         margin-top: 160px;
@@ -111,7 +115,10 @@ ul li a:hover {
         font-size: 20px;
         margin-top: -90px;
         padding-right: 17%;
+    }
 
+    #mobile-desc {
+        font-display: none;
     }
 
     #self {
@@ -136,9 +143,12 @@ ul li a:hover {
         background: url('static/homebg.png');
     }
 
+    #home {
+        padding-top: 50px;
+    }
+
     #hello {
         font-size: 45px;
-        margin-top: 50px;
         position: initial;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
@@ -165,8 +175,10 @@ ul li a:hover {
         text-align: center;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
 
