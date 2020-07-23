@@ -1,7 +1,4 @@
 /* All Content */
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     margin: 0;
@@ -113,12 +110,12 @@ ul li a:hover {
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
         font-size: 20px;
-        margin-top: -90px;
-        padding-right: 17%;
+        margin-top: -108px;
+        padding-right: 17.6%;
     }
 
     #mobile-desc {
-        font-display: none;
+        display: none;
     }
 
     #self {
@@ -144,11 +141,11 @@ ul li a:hover {
     }
 
     #home {
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     #hello {
-        font-size: 45px;
+        font-size: 50px;
         position: initial;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
@@ -186,16 +183,103 @@ ul li a:hover {
         z-index: -1;
         display: block;
         margin: 0 auto;
-        width: 220px;
+        width: 230px;
         margin-top: -25px;
         box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 28px;
+        border-radius: 20px;
     }
 
     #spark {
         z-index: 1;
-        width: 120px;
-        margin-top: -870px;
+        width: 110px;
+        margin-top: -890px;
         margin-left: 74%;
     }
+}
+
+/* About Me */
+@media screen and (min-width: 614px){
+    #aboutme {
+        margin-top: 7%;
+    }
+
+    #scenery {
+        z-index: -1;
+        width: 270px;
+        margin-left: 50%;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 28px;
+        margin-top: 4%;
+        margin-left: 57%;
+        animation-name: floating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes floating {
+        from {transform: translate(0, 0px);}
+        65%  {transform: translate(0, 15px);}
+        to   {transform: translate(0,-0px);}
+    }
+
+    #scenery-title {
+        text-align: right;
+        color: #933a5b;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        padding-top: 35px;
+        padding-right: 6%;
+    }
+
+    .col-md-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .paragraphs {
+        padding-right: 12%;
+        text-align: justify;
+        padding-top: 5%;
+    }
+
+    .par-title {
+        color: #933a5b;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .par-desc {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 614px){
+    #scenery {
+        width: 220px;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes floating {
+        from {transform: translate(0, 0px);}
+        65%  {transform: translate(0, 5px);}
+        to   {transform: translate(0,-0px);}
+    }
+}
+
+/* Portofolio */
+
+#portofolio {
+    margin-top: 7%;
 }
